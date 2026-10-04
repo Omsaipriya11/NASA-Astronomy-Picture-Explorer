@@ -1,0 +1,88 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NASA Astronomy Picture Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">NASA</div>
+
+        <div>
+            <h1>Astronomy Picture Explorer</h1>
+            <p>Explore the universe through NASA's Astronomy Picture of the Day</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="search-section">
+            <h2>Explore the Universe</h2>
+
+            <div class="search-box">
+                <input type="date" id="dateInput">
+                <button id="searchBtn">Explore</button>
+                <button id="todayBtn">Today's Picture</button>
+            </div>
+        </section>
+
+
+        <section id="loading" class="loading">
+            Loading NASA's Astronomy Picture...
+        </section>
+
+
+        <section id="error" class="error">
+            Unable to load the NASA picture. Please try again.
+        </section>
+
+
+        <section id="apodContainer" class="apod-container">
+
+            <div class="media-container">
+                <img id="apodImage" src="" alt="NASA Astronomy Picture">
+
+                <iframe
+                    id="apodVideo"
+                    src=""
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+
+            <div class="apod-info">
+
+                <span id="apodDate" class="date"></span>
+
+                <h2 id="apodTitle"></h2>
+
+                <p id="apodExplanation"></p>
+
+                <p id="apodCopyright" class="copyright"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>NASA Astronomy Picture Explorer</p>
+        <p>Data provided by NASA APOD API</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
